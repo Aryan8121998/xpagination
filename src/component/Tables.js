@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import "./Tables.css"
+import './Tables.css';  // Import the CSS file
 
-function Tables() {
+function App() {
   const [employees, setEmployees] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [error, setError] = useState('');
@@ -47,7 +47,7 @@ function Tables() {
 
   return (
     <div className="App">
-      <table style={{width:"100%"}}>
+      <table>
         <thead>
           <tr>
             <th>ID</th>
@@ -68,14 +68,12 @@ function Tables() {
         </tbody>
       </table>
 
-      <div className='.pagination-container'>
-        <button type="text "onClick={handlePreviousClick} disabled={currentPage === 1} style={{margin:"10px"}}>
+      <div className="pagination-container">
+        <button onClick={handlePreviousClick}>
           Previous
         </button>
-        <div>{currentPage}</div>
-      
-        {/* style={{border:"1px solid black" , height:"10px"}} */}
-        <button type='text' onClick={handleNextClick} disabled={currentPage === totalPages} style={{margin:"10px"}}> 
+        <span>{currentPage}</span>
+        <button onClick={handleNextClick}>
           Next
         </button>
       </div>
@@ -83,4 +81,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default App;
