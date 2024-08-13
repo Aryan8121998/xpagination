@@ -68,11 +68,11 @@ function Tables() {
         </tbody>
       </table>
 
-      <div>
+      <div className='pagination'>
         <button onClick={handlePreviousClick} disabled={currentPage === 1}>
           Previous
         </button>
-        <span>{`Page ${currentPage} of ${totalPages}`}</span>
+        <span>{`${currentPage}`}</span>
         <button onClick={handleNextClick} disabled={currentPage === totalPages}>
           Next
         </button>
