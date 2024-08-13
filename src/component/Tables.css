@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  button {
+    margin: 0 2px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+  
