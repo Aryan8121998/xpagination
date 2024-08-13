@@ -72,7 +72,7 @@ function Tables() {
         <button onClick={handlePreviousClick} disabled={currentPage === 1} style={{margin:"10px"}}>
           Previous
         </button>
-      <span>{currentPage}</span>
+      {currentPage}
         {/* style={{border:"1px solid black" , height:"10px"}} */}
         <button onClick={handleNextClick} disabled={currentPage === totalPages} style={{margin:"10px"}}> 
           Next
