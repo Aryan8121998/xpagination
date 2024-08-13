@@ -69,11 +69,11 @@ function Tables() {
       </table>
 
       <div className='pagination'>
-        <button onClick={handlePreviousClick} disabled={currentPage === 1}>
+        <button onClick={handlePreviousClick} disabled={currentPage === 1} style={{margin:"10px"}}>
           Previous
         </button>
-        <span>{`${currentPage}`}</span>
-        <button onClick={handleNextClick} disabled={currentPage === totalPages}>
+        <span style={{border:"10px solid black"}}>{`${currentPage}`}</span>
+        <button onClick={handleNextClick} disabled={currentPage === totalPages} style={{margin:"10px"}}> 
           Next
         </button>
       </div>
